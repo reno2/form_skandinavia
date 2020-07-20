@@ -24,11 +24,13 @@ if (!empty($_POST))
 										$phone = preg_match('/^[0-9() +-]*$/', $val, $matches);
 										if ($phone !== false)
 										{
-												$result[$key] = $val;
+												$result[] = $key . ': '.$val;
 										}
 										else $status = false;
+								}else{
+										$result[] = $key . ': '.$val;
 								}
-								$result[$key] = $val;
+
 						}
 						else
 						{
@@ -42,7 +44,7 @@ if (!empty($_POST))
 										$name = preg_match('/^[a-zа-я-]*$/i', $val, $matches);
 										if ($name !== false && strlen($val) < 25)
 										{
-												$result[$key] = $val;
+												$result[] = $key . ': '.$val;
 										}
 								};
 						}
@@ -54,7 +56,7 @@ if (!empty($_POST))
 
 				if ($status)
 				{
-
+						$result[] = 'ip : '.$_SERVER['REMOTE_ADDR'];
 						$file = 'info.txt';
 						//$current = file_get_contents($file);
 						$current = implode(';', $result) . "\n";

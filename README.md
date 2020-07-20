@@ -7,9 +7,11 @@
  - Взяты из сервиса    [color.adobe](https://color.adobe.com/)
  - ![colors](http://form.btrue.ru/Screenshot_4.png)    
 ### Поля адреса
-
   - Сервис daData
   - yandex maps api
+
+### Валидация
+   - Самописная добавлением tooltips
 
 ### Телефон
 
