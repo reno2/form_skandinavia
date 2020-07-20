@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="b-container">
+
+            <div class="b-form">
+                <form action="" id="form" enctype='multipart/form-data'>
+                    <input type="hidden" name="so-name">
+                    <div class="b-form__title b-titel">
+                        <div class="b-titel__name">Отправить заявку</div>
+                        <div class="b-titel__desc">оставте заявку и мы свяжемся с вами в ближайшее время</div>
+                    </div>
+                    <div class="b-form__content">
+                        <div class="i-name b-el">
+                            <label for="name" class="b-el__label">имя</label>
+                            <input id="name" name="name" type="text" class="b-el__input">
+                        </div>
+                        <div class="b-phone b-el">
+                            <label for="phone" class="b-phone__label">телефон *</label>
+                            <div class="b-phone__inner" id="country">
+
+                                <input autocomplete="nope" id="phone" name="phone" type="text" class="b-phone__i b-el__input">
+                            </div>
+
+
+                        </div>
+                        <div class="i-city b-el">
+                            <label for="phone" class="b-el__label">адрес *</label>
+                            <input autocomplete="nope" id="city" name="city" type="text" class="b-el__input">
+                        </div>
+                        <div class="b-el i-map">
+                            <div id="city2" class="i-map__wrp">
+                                <span class="i-map__lable">выбрать адрес</span>
+                                <span class="i-map__btn"><img src="img/cursor.png" alt=""></span>
+                            </div>
+
+                        </div>
+                        <div class="b-el">
+                            <input readonly name="city2" id="addres-yamap" type="text" class="b-el__input">
+                        </div>
+
+                    </div>
+
+                    <div class="i-sbt b-el">
+                        <button type="submite" class="i-sbt__btn">отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="b-modal__wrap">
+            <div class="b-modal">
+                <div class="b-modal__header">
+                    <div class="b-modal__title">Заголовок</div>
+                </div>
+                <div class="b-modal__content m-content">
+                    <div class="m-content__inner">
+
+                    </div>
+                </div>
+                <div class="b-modal__footer m-footer">
+                    <span class="m-footer__btn m-footer__close">закрыть</span>
+                    <span class="m-footer__btn m-footer__action">действие</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=231400a5-9288-497e-9a5b-4058f286d308"
+    type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
