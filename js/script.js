@@ -1,4 +1,4 @@
-var validate = {
+const validate = {
 
     init: function () {
         validate.setListener();
